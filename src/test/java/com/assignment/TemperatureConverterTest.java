@@ -17,4 +17,11 @@ public class TemperatureConverterTest {
         // Expected: 32.0°F should give 0.0°C
         assertEquals(0.0, converter.fahrenheitToCelsius(32.0), 0.0001);
     }
+
+    @Test
+    void testCelsiusToKelvin() {
+        TemperatureConverter converter = new TemperatureConverter();
+        // Expected: 0°C should give 273.15 K
+        assertEquals(273.15, converter.celsiusToKelvin(0.0), 0.0001);
+    }
 }
